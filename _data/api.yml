@@ -550,3 +550,455 @@
           desc: "Unknown, seems to be unused ([0, 0] for me)"
           name: api_pvp
           type: int[2]
+
+    -
+      name: maparea
+      desc: "Returns information about sortie maps"
+      type: array
+      response:
+        -
+          desc: "Remodel level"
+          name: api_afterlv
+          type: int
+        -
+          desc: "Remodels into..."
+          name: api_aftershipid
+          type: int
+        -
+          desc: "Rarity"
+          name: api_backs
+          type: int
+        -
+          desc: "Seems unused..."
+          name: api_baku
+          type: int[4]
+        -
+          desc: "Resources gained for deconstructing her"
+          name: api_broken
+          type: int[4]
+        -
+          desc: "Bullets held"
+          name: api_bull
+          type: int
+        -
+          desc: "Bullet capacity"
+          name: api_bull_max
+          type: int
+        -
+          desc: "Condition (fatigue)"
+          name: api_cond
+          type: int
+        -
+          desc: "Total EXP"
+          name: api_exp
+          type: int
+        -
+          desc: "Fuel"
+          name: api_fuel
+          type: int
+        -
+          desc: "Fuel capacity"
+          name: api_fuel_max
+          type: int
+        -
+          desc: "??? (always null?)"
+          name: api_gomes
+          type: ???
+        -
+          desc: "??? (always null?)"
+          name: api_gomes2
+          type: ???
+        -
+          desc: "Firepower, with modernization (cur, max)"
+          name: api_houg
+          type: int[2]
+        -
+          desc: "???"
+          name: api_houm
+          type: int[2]
+        -
+          desc: "Her local ID (just an identifier in your deck)"
+          name: api_id
+          type: int
+        -
+          desc: "Evasion, with equipment"
+          name: api_kaihi
+          type: int[2]
+        -
+          desc: "Firepower, with modernization and equipment (cur, max)"
+          name: api_karyoku
+          type: int[2]
+        -
+          desc: "Something to do with modernization"
+          name: api_kyouka
+          type: int[4]
+        -
+          desc: "Range"
+          name: api_leng
+          type: int
+        -
+          desc: "Luck, with modernizations (current, max)"
+          name: api_luck
+          type: int[2]
+        -
+          desc: "Luck, with modernization and equipment (current, max)"
+          name: api_lucky
+          type: int[2]
+        -
+          desc: "Level"
+          name: api_lv
+          type: int
+        -
+          desc: "Max HP"
+          name: api_maxhp
+          type: int
+        -
+          desc: "ID of her admiral"
+          name: api_member_id
+          type: int
+        -
+          desc: "Her name, with Kanji"
+          name: api_name
+          type: string
+        -
+          desc: "Current cost to repair (Steel, Fuel)"
+          name: api_ndock_item
+          type: int[2]
+        -
+          desc: "Current repair time, in seconds"
+          name: api_ndock_time
+          type: int
+        -
+          desc: "Current time to repair (in the format HH:MM:SS)"
+          name: api_ndock_time_str
+          type: string
+        -
+          desc: "Current HP"
+          name: api_nowhp
+          type: int
+        -
+          desc: "???"
+          name: api_onslot
+          type: int[5]
+        -
+          desc: "Bonus when used for modernization, ( FP, TP, AA, AM )"
+          name: api_powup
+          type: int[4]
+        -
+          desc: "Torpedo, with modernization (cur, max)"
+          name: api_raig
+          type: int[2]
+        -
+          desc: "Seems unused (always [ 0, 0 ])"
+          name: api_raim
+          type: int[2]
+        -
+          desc: "Torpedo, with modernization and equipment (cur, max)"
+          name: api_raisou
+          type: int[2]
+        -
+          desc: "Line of Sight, with modernization (cur, max)"
+          name: api_saku
+          type: int[2]
+        -
+          desc: "Line of Sight, with modernization and equipment (cur, max)"
+          name: api_sakuteki
+          type: int[2]
+        -
+          desc: "ID of the ship"
+          name: api_ship_id
+          type: int
+        -
+          desc: "What's equipped in each slot"
+          name: api_slot
+          type: int[5]
+        -
+          desc: "Available number of slots"
+          name: api_slotnum
+          type: int
+        -
+          desc: "Speed"
+          name: api_soku
+          type: int
+        -
+          desc: "The number on the card"
+          name: api_sortno
+          type: int
+        -
+          desc: "Armor, with modernization (cur, max)"
+          name: api_souk
+          type: int
+        -
+          desc: "Armor, with modernization and equipment (cur, max)"
+          name: api_soukou
+          type: int
+        -
+          desc: "Always seems to be the same as api_star"
+          name: api_srate
+          type: int
+        -
+          desc: "\"Heart Lock\"?"
+          name: api_star
+          type: int
+        -
+          desc: "Ship Type"
+          name: api_stype
+          type: int
+        -
+          desc: "Endurance/Max HP (cur, max)"
+          name: api_taik
+          type: int[2]
+        -
+          desc: "Anti-Air, with modernization and equipment (cur, max)"
+          name: api_taiku
+          type: int[2]
+        -
+          desc: "Anti-Sub (cur, max)"
+          name: api_taisen
+          type: int[2]
+        -
+          desc: "Anti-Air, with modernization (cur, max)"
+          name: api_tyku
+          type: int[2]
+        -
+          desc: "Ammo cost per point to resupply"
+          name: api_use_bull
+          type: int[2]
+        -
+          desc: "Fuel cost per point to resupply"
+          name: api_use_fuel
+          type: int[2]
+        -
+          desc: "1 or 3 if the ship has extra (hourly?) voice clips"
+          name: api_voicef
+          type: int[2]
+        -
+          desc: "Name, in Hiragana/Katakana"
+          name: api_yomi
+          type: string
+
+    -
+      name: deck
+      desc: "Returns information about your fleets"
+      type: array
+      response:
+        -
+          desc: "The ID of the fleet's admiral"
+          name: api_member_id
+          type: int
+        -
+          desc: "Local ID of the fleet"
+          name: api_id
+          type: int
+        -
+          desc: "Name of the fleet"
+          name: api_name
+          type: int
+        -
+          desc: "??? (Always \"\" for me)"
+          name: api_name_id
+          type: string
+        -
+          desc: "???"
+          name: api_mission
+          type: int[4]
+        -
+          desc: "??? (always \"0\" for me)"
+          name: api_flagship
+          type: string
+        -
+          desc: "Local ID of the ships in the fleet"
+          name: api_ship
+          type: int[6]
+
+    -
+      name: material
+      desc: |
+        Returns information about your resources.
+        
+        1. Fuel
+        1. Ammo
+        1. Steel
+        1. Bauxite
+        1. Instant Construction
+        1. Instant Repair
+        1. Development Material
+      type: array
+      response:
+        -
+          desc: "ID of the admiral the resource belongs to"
+          name: api_member_id
+          type: int
+        -
+          desc: "ID of the resource (see above)"
+          name: api_id
+          type: int
+        -
+          desc: "Currently held amount"
+          name: api_value
+          type: int
+
+    -
+      name: kdock
+      desc: "Returns information about your current crafting projects."
+      type: array
+      response:
+        -
+          desc: "ID of the admiral who owns the dock"
+          name: api_member_id
+          type: int
+        -
+          desc: "Local ID of the dock"
+          name: api_id
+          type: int
+        -
+          desc: "State; 1 = Unused, 2 = Building, 3 = Finished"
+          name: api_state
+          type: int
+        -
+          desc: "ID of the ship that will be created"
+          name: api_created_ship_id
+          type: int
+        -
+          desc: "??? (definitely not a timestamp...)"
+          name: api_complete_time
+          type: int
+        -
+          desc: "When it'll be complete, YYYY-MM-DD HH:MM:SS"
+          name: api_complete_time_str
+          type: int
+        -
+          desc: "Fuel used"
+          name: api_item1
+          type: int
+        -
+          desc: "Ammo used"
+          name: api_item2
+          type: int
+        -
+          desc: "Steel used"
+          name: api_item3
+          type: int
+        -
+          desc: "Bauxite used"
+          name: api_item4
+          type: int
+
+    -
+      name: furniture
+      desc: "Returns information about your furniture."
+      type: array
+      response:
+        -
+          desc: "ID of the admiral who owns it"
+          name: api_member_id
+          type: int
+        -
+          desc: "Local ID of the item (equal to api_furniture_id)"
+          name: api_id
+          type: int
+        -
+          desc: "Type/Category"
+          name: api_furniture_type
+          type: int
+        -
+          desc: "Number within that category"
+          name: api_furniture_no
+          type: int
+        -
+          desc: "ID of the actual item"
+          name: api_furniture_id
+          type: int
+
+    -
+      name: slotitem
+      desc: |
+        Returns information about your equippable items.
+        
+        Response is a subset of /api_get_master/slotitem, with blank (but still present) api_info field, no api_sortno and the extra response data listed below.  
+        Yes, I was too lazy to write it all over again, you caught me.
+      type: array
+      response:
+        -
+          desc: "???"
+          name: api_flag
+          type: int[7]
+        -
+          desc: "???"
+          name: api_slotitem_id
+          type: int
+
+    -
+      name: useitem
+      desc: "Returns information about your consumable items."
+      type: array
+      response:
+        -
+          desc: "ID of the admiral who owns the item"
+          name: api_member_id
+          type: int
+        -
+          desc: "ID of the item"
+          name: api_id
+          type: int
+        -
+          desc: "Value of the item, in fcoins"
+          name: api_value
+          type: int
+        -
+          desc: "<from /api_get_master/useitem>"
+          name: api_usetype
+          type: int
+        -
+          desc: "<from /api_get_master/useitem>"
+          name: api_category
+          type: int
+        -
+          desc: "Name of the item"
+          name: api_name
+          type: string
+        -
+          desc: "Description of the item followed by an empty string (WHY)"
+          name: api_description
+          type: string[2]
+        -
+          desc: "Price of the item?"
+          name: api_price
+          type: int
+        -
+          desc: "How many of them you have"
+          name: api_count
+          type: int
+
+    -
+      name: actionlog
+      desc: "Returns a journal of sorts of past in-game events."
+      type: array
+      response:
+        -
+          desc: "An index"
+          name: api_no
+          type: int
+        -
+          desc: "??? (actually an int)"
+          name: api_type
+          type: string
+        -
+          desc: "??? (actually an int)"
+          name: api_type
+          type: string
+        -
+          desc: "Short, human-readable message for what happened"
+          name: api_message
+          type: string
+
+    -
+      name: logincheck
+      desc: "???"
+      type: object
+      response:
+        -
+          desc: "???"
+          name: api_add_material_flag
+          type: int
+
