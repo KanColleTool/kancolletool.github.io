@@ -12,4 +12,91 @@
       desc: The admiral's nickname (DMM.com username)
     - name: api_nickname_id
       type: string
-      desc: Unknown and unused, possibly the admiral's DMM.com UID?
+      desc: Unknown and unused, possibly the admirals DMM.com UID?
+    - name: api_active_flag
+      type: int
+      desc: Unknown, if they’ve gotten into the game, maybe? (1 for me)
+    - name: api_starttime
+      type: int
+      desc: Unix Timestamp for when the user’s current session started
+    - name: api_level
+      type: int
+      desc: The current user’s Admiral Level
+    - name: api_rank
+      type: int
+      desc: PvP Rank, not sure how this works… (8 for me)
+    - name: api_experience
+      type: int
+      desc: Probably the amount of Admiral Level EXP
+    - name: api_fleetname
+      type: string
+      desc: Not sure, the primary fleet’s name, maybe?
+    - name: api_comment
+      type: ???
+      desc: ???
+    - name: api_comment_id
+      type: string
+      desc: ???
+    - name: api_max_chara
+      type: int
+      desc: Max number of shipgirls (100 for me)
+    - name: api_max_slotitem
+      type: int
+      desc: Max number of items held (497 for me)
+    - name: api_max_kagu
+      type: int
+      desc: Max number of furniture items held (0 for me, so… no limit?)
+    - name: api_playtime
+      type: int
+      desc: ??? (0 for me)
+    - name: api_tutorial
+      type: int
+      desc: Whether to play the tutorial on login? (0 for me)
+    - name: api_furniture
+      type: int[6]
+      desc: The currently active furniture items
+    - name: api_count_deck
+      type: int
+      desc: The player’s max number of fleets
+    - name: api_count_kdock
+      type: int
+      desc: Number of available crafting docks
+    - name: api_count_ndock
+      type: int
+      desc: Number of available repair docks
+    - name: api_fcoin
+      type: int
+      desc: Current number of Furniture Coins possessed
+    - name: api_st_win
+      type: int
+      desc: Number of sorties won?
+    - name: api_st_lose
+      type: int
+      desc: Number of sorties lost?
+    - name: api_ms_count
+      type: int
+      desc: Total number of missions embarked on?
+    - name: api_ms_success
+      type: int
+      desc: Number of missions that were successful?
+    - name: api_pt_win
+      type: int
+      desc: Number of PvP battles won?
+    - name: api_pt_lose
+      type: int
+      desc: Number of PvP battles lost?
+    - name: api_pt_challenged
+      type: int
+      desc: Seems to be unused
+    - name: api_pt_challenged_win
+      type: int
+      desc: Seems to be unused
+    - name: api_firstflag
+      type: int
+      desc: Unknown (1 for me)
+    - name: api_tutorial_progress
+      type: int
+      desc: Percent progress through the tutorial (100 for me)
+    - name: api_pvp
+      type: int[2]
+      desc: Unknown, seems to be unused ([0, 0] for me)
