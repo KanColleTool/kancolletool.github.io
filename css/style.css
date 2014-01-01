@@ -1,0 +1,8 @@
+body {
+	padding-top: 70px;
+}
+
+.post .date { color: #999; }
+.post .title h2 {
+	margin-top: 0;
+}

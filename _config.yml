@@ -1,0 +1,4 @@
+name: KanColleTool
+markdown: redcarpet
+pygments: true
+permalink: /:year/:month/:day/:title
