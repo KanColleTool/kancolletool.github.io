@@ -2,6 +2,7 @@ body { padding-top: 70px; }
 
 .navbar-kct { background-color: rgba(75, 75, 75, 0.85); }
 .navbar-kct .navbar-brand, .navbar-kct .navbar-nav > li > a { color: #fff; }
+.navbar-kct .navbar-brand:hover, .navbar-kct .navbar-nav > li > a:hover { color: #ccc; }
 
 /*
  * Common
@@ -22,14 +23,17 @@ p.partwidth { max-width: 800px; }
 
 ul.params { list-style: none; }
 ul.params .none { color: #999; }
-ul.params .type { display: inline-block; font-size: 85%; color: #999; width: 35px; text-align: right; }
-ul.params .name { display: inline-block; font-weight: bold; }
+ul.params .type { display: inline-block; color: #777; }
+ul.params .name { display: inline-block; font-weight: bold; float: left; margin-right: 5px; }
 ul.params .description { display: block; margin-bottom: 1em; }
 
 @media (min-width: 768px) {
 	ul.params li { display: table-row; }
-	ul.params li > * { display: table-cell !important; padding: 0 5px; }
-	ul.params .name:after { content: ":"; }
+	ul.params li > * { display: table-cell !important; padding-right: 10px; }
+	ul.params li > *:last-child { padding-right: 0; }
+	
+	ul.params .type { font-size: 85%; }
+	ul.params .name { float: none; }
 }
 
 ul.params.endpoint-section { padding-left: 0; }
