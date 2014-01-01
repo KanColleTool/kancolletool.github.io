@@ -1,0 +1,15 @@
+- name: api_get_master
+  endpoints:
+  - name: basic
+    desc: Returns information on the current admiral
+    type: object
+    response:
+    - name: api_member_id
+      type: string
+      desc: The admiral's numeric ID
+    - name: api_member_nickname
+      type: string
+      desc: The admiral's nickname (DMM.com username)
+    - name: api_nickname_id
+      type: string
+      desc: Unknown and unused, possibly the admiral's DMM.com UID?

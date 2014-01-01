@@ -1,8 +1,29 @@
-body {
-	padding-top: 70px;
-}
+body { padding-top: 70px; }
 
+.navbar-kct { background-color: rgba(75, 75, 75, 0.85); }
+.navbar-kct .navbar-brand, .navbar-kct .navbar-nav > li > a { color: #fff; }
+
+/*
+ * Common
+ */
+h4 { margin-bottom: 5px; }
+p.partwidth { max-width: 800px; }
+
+/*
+ * Front Page
+ */
 .post .date { color: #999; }
-.post .title h2 {
-	margin-top: 0;
-}
+.post .title h2 { margin-top: 0; }
+
+/*
+ * API Documentation
+ */
+.endpoint, .endpoint-section { margin-left: 50px; }
+
+ul.params { list-style: none; }
+ul.params .none { color: #999; }
+ul.params .name { font-weight: bold; }
+ul.params .type:before { content: " - "; }
+@media (max-width: 769px) { ul.params .description { display: block; margin-bottom: 1em; } }
+
+ul.params.endpoint-section { padding-left: 0; }
