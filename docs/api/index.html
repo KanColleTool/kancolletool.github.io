@@ -34,7 +34,7 @@ title: API Documentation
 {% for endpoint in category.endpoints %}
 <h3>/{{category.name}}/{{ endpoint.name }}</h3>
 <div class="endpoint">
-	<p>{{ endpoint.desc }}</p>
+	<p>{{ endpoint.desc | markdownify }}</p>
 	
 	<h4>Params:</h4>
 	<ul class="params endpoint-section">
