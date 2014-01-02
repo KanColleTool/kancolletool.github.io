@@ -122,6 +122,10 @@
           desc: "??? (always null)"
           name: api_missions
           type: ???
+        -
+          desc: "The ship's name, in Kanji"
+          name: api_name
+          type: string
         - 
           desc: "Powerups granted when used for modernization"
           name: api_powup
@@ -194,6 +198,10 @@
           desc: "1 or 3 if the ship has extra voice clips, normally 0"
           name: api_voicef
           type: int
+        -
+          desc: "The name's reading"
+          name: api_yomi
+          type: string
       type: array
 
     - 
