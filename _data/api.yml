@@ -801,7 +801,7 @@
         -
           desc: "Name of the fleet"
           name: api_name
-          type: int
+          type: string
         -
           desc: "??? (Always \"\" for me)"
           name: api_name_id
