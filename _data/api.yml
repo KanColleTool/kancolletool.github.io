@@ -560,8 +560,8 @@
           type: int[2]
 
     -
-      name: maparea
-      desc: "Returns information about sortie maps"
+      name: ship
+      desc: "Returns information about your ships"
       type: array
       response:
         -
