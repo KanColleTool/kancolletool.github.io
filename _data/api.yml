@@ -874,7 +874,7 @@
         -
           desc: "When it'll be complete, YYYY-MM-DD HH:MM:SS"
           name: api_complete_time_str
-          type: int
+          type: string
         -
           desc: "Fuel used"
           name: api_item1
@@ -920,7 +920,7 @@
         -
           desc: "When it'll be complete, YYYY-MM-DD HH:MM:SS"
           name: api_complete_time_str
-          type: int
+          type: string
         -
           desc: "Fuel used"
           name: api_item1
