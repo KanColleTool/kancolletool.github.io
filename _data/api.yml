@@ -893,6 +893,52 @@
           type: int
 
     -
+      name: kdock
+      desc: "Returns information about your current crafting projects."
+      type: array
+      response:
+        -
+          desc: "ID of the admiral who owns the dock"
+          name: api_member_id
+          type: int
+        -
+          desc: "Local ID of the dock"
+          name: api_id
+          type: int
+        -
+          desc: "State; 1 = Unused, 2 = Building, 3 = Finished"
+          name: api_state
+          type: int
+        -
+          desc: "ID of the ship that will be created"
+          name: api_created_ship_id
+          type: int
+        -
+          desc: "??? (definitely not a timestamp...)"
+          name: api_complete_time
+          type: int
+        -
+          desc: "When it'll be complete, YYYY-MM-DD HH:MM:SS"
+          name: api_complete_time_str
+          type: int
+        -
+          desc: "Fuel used"
+          name: api_item1
+          type: int
+        -
+          desc: "Ammo used"
+          name: api_item2
+          type: int
+        -
+          desc: "Steel used"
+          name: api_item3
+          type: int
+        -
+          desc: "Bauxite used"
+          name: api_item4
+          type: int
+
+    -
       name: furniture
       desc: "Returns information about your furniture."
       type: array
