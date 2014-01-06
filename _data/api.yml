@@ -847,8 +847,8 @@
           type: int
 
     -
-      name: kdock
-      desc: "Returns information about your current crafting projects."
+      name: ndock
+      desc: "Returns information about your repair docks."
       type: array
       response:
         -
@@ -894,7 +894,7 @@
 
     -
       name: kdock
-      desc: "Returns information about your current crafting projects."
+      desc: "Returns information about your crafting docks."
       type: array
       response:
         -
