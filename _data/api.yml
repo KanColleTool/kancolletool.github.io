@@ -601,11 +601,15 @@
           name: api_experience
           type: int[2]
         - 
-          desc: "Sortie Stats { api_win: string<int>, api_lose: string<int>, api_rate: string<float> }"
+          desc: |
+              Sortie Stats
+              { api_win: string<int>, api_lose: string<int>, api_rate: string<float> }
           name: api_war
           type: object
         - 
-          desc: "Expedition Stats { api_win: string<int>, api_lose: string<int>, api_rate: string<float> }"
+          desc: |
+              Expedition Stats
+              { api_win: string<int>, api_lose: string<int>, api_rate: string<float> }
           name: api_mission
           type: object
         - 
