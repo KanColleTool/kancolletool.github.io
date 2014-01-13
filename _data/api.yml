@@ -126,6 +126,10 @@
           desc: "??? (always null)"
           name: api_missions
           type: ???
+        -
+          desc: "The ship's name, in Kanji"
+          name: api_name
+          type: string
         - 
           desc: "Powerups granted when used for modernization"
           name: api_powup
@@ -198,6 +202,10 @@
           desc: "1 or 3 if the ship has extra voice clips, normally 0"
           name: api_voicef
           type: int
+        -
+          desc: "The name's reading"
+          name: api_yomi
+          type: string
       type: array
 
     - 
@@ -556,8 +564,106 @@
           type: int[2]
 
     -
-      name: maparea
-      desc: "Returns information about sortie maps"
+      name: record
+      desc: "Returns more information about you"
+      type: array
+      response:
+        - 
+          desc: "The admiral's numeric ID"
+          name: api_member_id
+          type: string
+        - 
+          desc: "The admiral's nickname (DMM.com username)"
+          name: api_member_nickname
+          type: string
+        - 
+          desc: "Unknown and unused, possibly the admirals DMM.com UID?"
+          name: api_nickname_id
+          type: string
+        - 
+          desc: "Unknown, blank for me"
+          name: api_cmt
+          type: string
+        - 
+          desc: "Unknown, blank for me"
+          name: api_cmt_id
+          type: string
+        - 
+          desc: "Unknown, blank for me"
+          name: api_photo_url
+          type: string
+        - 
+          desc: "The current user’s Admiral Level"
+          name: api_level
+          type: int
+        - 
+          desc: "PvP Rank, not sure how this works… (8 for me)"
+          name: api_rank
+          type: int
+        - 
+          desc: "Admiral Level EXP and needed EXP"
+          name: api_experience
+          type: int[2]
+        - 
+          desc: |
+              Sortie Stats
+              { api_win: string<int>, api_lose: string<int>, api_rate: string<float> }
+          name: api_war
+          type: object
+        - 
+          desc: |
+              Expedition Stats
+              { api_win: string<int>, api_lose: string<int>, api_rate: string<float> }
+          name: api_mission
+          type: object
+        - 
+          desc: "PvP Stats { api_win: string<int>, api_lose: string<int>, api_rate: string<float> }"
+          name: api_practice
+          type: object
+        - 
+          desc: "Number of Friends? (there's no such thing)"
+          name: api_friend
+          type: int
+        - 
+          desc: "Number of Fleets"
+          name: api_deck
+          type: int
+        - 
+          desc: "Number of Construction Docks"
+          name: api_kdoc
+          type: int
+        - 
+          desc: "Number of Repair Docks"
+          name: api_ndoc
+          type: int
+        - 
+          desc: "Number of Ships (current, max)"
+          name: api_ship
+          type: int[2]
+        - 
+          desc: "Number of Equippable Items (current, max)"
+          name: api_slotitem
+          type: int[2]
+        - 
+          desc: "Number of Furniture Items"
+          name: api_furniture
+          type: int
+        - 
+          desc: "???"
+          name: api_complate
+          type: int[2]
+        - 
+          desc: "??? (['0.0', '0.0'] for me)"
+          name: api_complate
+          type: string<float>[2]
+        - 
+          desc: "Resource Cap"
+          name: api_material_max
+          type: int
+
+    -
+      name: ship
+      desc: "Returns information about your ships"
       type: array
       response:
         -
@@ -797,7 +903,7 @@
         -
           desc: "Name of the fleet"
           name: api_name
-          type: int
+          type: string
         -
           desc: "??? (Always \"\" for me)"
           name: api_name_id
@@ -843,8 +949,8 @@
           type: int
 
     -
-      name: kdock
-      desc: "Returns information about your current crafting projects."
+      name: ndock
+      desc: "Returns information about your repair docks."
       type: array
       response:
         -
@@ -870,7 +976,53 @@
         -
           desc: "When it'll be complete, YYYY-MM-DD HH:MM:SS"
           name: api_complete_time_str
+          type: string
+        -
+          desc: "Fuel used"
+          name: api_item1
           type: int
+        -
+          desc: "Ammo used"
+          name: api_item2
+          type: int
+        -
+          desc: "Steel used"
+          name: api_item3
+          type: int
+        -
+          desc: "Bauxite used"
+          name: api_item4
+          type: int
+
+    -
+      name: kdock
+      desc: "Returns information about your crafting docks."
+      type: array
+      response:
+        -
+          desc: "ID of the admiral who owns the dock"
+          name: api_member_id
+          type: int
+        -
+          desc: "Local ID of the dock"
+          name: api_id
+          type: int
+        -
+          desc: "State; 1 = Unused, 2 = Building, 3 = Finished"
+          name: api_state
+          type: int
+        -
+          desc: "ID of the ship that will be created"
+          name: api_created_ship_id
+          type: int
+        -
+          desc: "??? (definitely not a timestamp...)"
+          name: api_complete_time
+          type: int
+        -
+          desc: "When it'll be complete, YYYY-MM-DD HH:MM:SS"
+          name: api_complete_time_str
+          type: string
         -
           desc: "Fuel used"
           name: api_item1
