@@ -118,6 +118,10 @@
           desc: "Plane Capacity"
           name: api_maxeq
           type: int[4]
+        -
+          desc: "Name"
+          name: api_name
+          type: string
         - 
           desc: "??? (always null)"
           name: api_missions
