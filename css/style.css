@@ -20,7 +20,7 @@ p.partwidth { max-width: 800px; }
  * Downloads Page
  */
 .dl-section { margin-left: 30px; }
-.dl-links { margin-bottom: 2px; }
+.dl-links { margin-bottom: 5px; }
 .dl-links:last-child { margin-bottom: 0; }
 
 /*
