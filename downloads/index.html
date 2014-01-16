@@ -1,0 +1,63 @@
+---
+layout: default
+---
+
+<h1>Downloads</h1>
+<p>
+	The current version is <strong>{{ site.data.downloads[0].version }}</strong>, released <strong>{{ site.data.downloads[0].date }}</strong>.
+</p>
+
+<h2>Windows</h2>
+<div class="dl-section">
+	<p>
+		Tested on Windows <strong>7</strong> and (briefly) Windows <strong>8.1</strong>, but should be compatible all the way back to Windows XP.
+	</p>
+	<p>
+		The <strong>Standalone</strong> version is a folder full of DLLs and two EXEs you can put anywhere.<br />
+		The <strong>Installer</strong> is what it says on the tin - a convenient installer that installs the program and makes Start Menu shortcuts.
+	</p>
+	<a class="btn btn-primary" href="http://kancolletool.s3.amazonaws.com/downloads/{{ site.data.downloads[0].version }}/KanColleTool.zip">Download Standalone</a>
+	<a class="btn btn-primary" href="http://kancolletool.s3.amazonaws.com/downloads/{{ site.data.downloads[0].version }}/KanColleTool-Setup.zip">Download Installer</a>
+</div>
+
+<h2>Mac</h2>
+<div class="dl-section">
+	<p>
+		Requires OSX <strong>10.9</strong> (Mavericks) or later.<br />
+		Support for <strong>10.7</strong> (Lion) and <strong>10.8</strong> (Mountain Lion) is planned, maybe <strong>10.6</strong> (Snow Leopard) too.
+	</p>
+	<a class="btn btn-primary" href="http://kancolletool.s3.amazonaws.com/downloads/{{ site.data.downloads[0].version }}/KanColleTool.dmg">Download</a>
+</div>
+
+<h2>Linux</h2>
+<div class="dl-section">
+	<p>
+		No binary packages yet, sorry - I'm still working on my packaging skills.<br />
+		If you want to build the program from source, you only need your distribution's base development package as well as Qt5 and Qt5-Webkit installed.
+	</p>
+	<a class="btn btn-primary" href="http://kancolletool.s3.amazonaws.com/downloads/{{ site.data.downloads[0].version }}/KanColleTool.deb" disabled="disabled">Download (Debian, Ubuntu, Mint)</a>
+	<a class="btn btn-primary" href="http://kancolletool.s3.amazonaws.com/downloads/{{ site.data.downloads[0].version }}/KanColleTool.rpm" disabled="disabled">Download (Fedora, RHEL)</a>
+	<a class="btn btn-primary" href="http://kancolletool.s3.amazonaws.com/downloads/{{ site.data.downloads[0].version }}/PKGBUILD" disabled="disabled">Download (Arch)</a>
+</div>
+
+<h2>Source</h2>
+<div class="dl-section">
+	<p>
+		If you want to build the project yourself, you can either get the latest sources from the <a href="https://github.com/KanColleTool/KanColleTool/">GitHub Repository</a>, or download a snapshot of the source as of this release below.
+	</p>
+	<p>
+		<strong>Build Requirements:</strong>
+		<ul>
+			<li><a href="http://qt-project.org/">Qt 5</a></li>
+			<li>A C++11 compatible compiler<br /><small>(up-to-date GCC, Clang or MinGW, or Microsoft Visual Studio 2013)</small></li>
+		</ul>
+		To build the Windows installer, you'll also need <a href="http://www.jrsoftware.org/isinfo.php">InnoSetup 5</a> (with the plugin the installer asks you about) installed.
+	</p>
+	<a class="btn btn-primary" href="https://github.com/KanColleTool/KanColleTool/archive/{{ site.data.downloads[0].commit }}.zip">Snapshot (.zip)</a>
+	<a class="btn btn-primary" href="https://github.com/KanColleTool/KanColleTool/archive/{{ site.data.downloads[0].commit }}.tar.gz">Snapshot (.tar.gz)</a>
+</div>
+
+<hr />
+<p>
+	Older versions can be found <a href="https://github.com/KanColleTool/KanColleTool/releases">here</a>.
+</p>
