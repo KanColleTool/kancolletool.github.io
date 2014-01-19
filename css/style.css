@@ -1,4 +1,4 @@
-body { padding-top: 70px; }
+body { padding-top: 70px; padding-bottom: 20px; }
 
 .navbar-kct { background-color: rgba(75, 75, 75, 0.85); }
 .navbar-kct .navbar-brand, .navbar-kct .navbar-nav > li > a { color: #fff; }
@@ -15,6 +15,13 @@ p.partwidth { max-width: 800px; }
  */
 .post .date { color: #999; }
 .post .title h2 { margin-top: 0; }
+
+/*
+ * Downloads Page
+ */
+.dl-section { margin-left: 30px; }
+.dl-links { margin-bottom: 5px; }
+.dl-links:last-child { margin-bottom: 0; }
 
 /*
  * API Documentation
