@@ -1,5 +1,9 @@
 ---
 -
+  version: 0.5.2
+  date: 2014-01-20
+  commit: a2f5f0eeed4680a4b52895ff0f7e6ac5933989b0
+-
   version: 0.5.1
   date: 2014-01-20
   commit: 588b46b06f1f58c6aaf24b5ab0777b221bff3cc2
