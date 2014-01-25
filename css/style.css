@@ -13,6 +13,8 @@ p.partwidth { max-width: 800px; }
 /*
  * Front Page
  */
+.post { margin-bottom: 30px; padding-bottom: 20px; border-bottom: 1px solid #ccc; }
+.post-single { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
 .post .date { color: #999; }
 .post .title h2 { margin-top: 0; }
 

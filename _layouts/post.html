@@ -2,11 +2,24 @@
 layout: default
 ---
 
-<div class="post">
+<div class="post post-single">
 	<small class="date">{{ page.date | date_to_string }}</small>
 	<div class="title">
 		<h2>{{ page.title }}</h2>
 	</div>
 	
 	{{ content }}
+	
+	<hr />
+	<h3>Download:</h3>
+	<div class="dl-links">
+		{% if page.dlver %}
+		<a class="btn btn-primary" href="http://kancolletool.s3.amazonaws.com/downloads/{{ page.dlver }}/KanColleTool.zip">Windows (Standalone)</a>
+		<a class="btn btn-primary" href="http://kancolletool.s3.amazonaws.com/downloads/{{ page.dlver }}/KanColleTool-Setup.exe">Windows (Installer)</a>
+		<a class="btn btn-primary" href="http://kancolletool.s3.amazonaws.com/downloads/{{ page.dlver }}/KanColleTool.dmg">Mac</a>
+		{% endif %}
+	</div>
+	<p>
+		Linux repos available on the <a href="/downloads/">downloads page</a>.
+	</p>
 </div>

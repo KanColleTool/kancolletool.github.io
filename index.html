@@ -11,5 +11,8 @@ title: KanColleTool
 	</a>
 	
 	{{ post.content }}
+	{% if post.dlver %}
+	<a href="{{ post.url }}">(download links)</a>
+	{% endif %}
 </div>
 {% endfor %}
