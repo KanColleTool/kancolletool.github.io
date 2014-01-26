@@ -1,5 +1,9 @@
 ---
 -
+  version: 0.6.1
+  data: 2014-01-26
+  commit: e1c865d9bcaee1d12601f41c520cb9c65929228b
+-
   version: 0.6.0
   date: 2014-01-25
   commit: 719e51977c3cd11839a109ca632039da80b5ad4b
