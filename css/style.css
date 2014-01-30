@@ -8,7 +8,7 @@ body { padding-top: 70px; padding-bottom: 20px; }
  * Common
  */
 h4 { margin-bottom: 5px; }
-p.partwidth { max-width: 800px; }
+p { max-width: 800px; }
 
 /*
  * Front Page
