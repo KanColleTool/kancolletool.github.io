@@ -1,5 +1,66 @@
 ---
 layout: default
+title: FAQ
 ---
 
 <h1>FAQ</h1>
+
+<h2>Q: What is KanColleTool?</h2>
+<p>
+	KanColleTool is two things.
+</p>
+<p>
+	<strong>A viewer</strong> for the game, a convenient launcher optimized specifically for KanColle.<br />
+	If you're using Flash Player Standalone for the game, think that, but better.<br />
+	As an extra bonus, it'll translate the game into English for you (using Commie's translation data, provided by Sikarra).
+</p>
+<p>
+	<strong>A tool</strong> to view information the game doesn't show you, and information it does show you in a more convenient way.<br />
+	It's a small window that stays quietly in the tray when not in use, that will also notify you of completed constructions and repairs.
+</p>
+
+<h2>Q: Is this safe? Will I get banned?</h2>
+<p>
+	If you're a foreign player, DMM already have all the reason they need to ban you.
+</p>
+<p>
+	Using KCT will not increase your chances of getting banned, and starting with <strong>0.7.1</strong>, not even I could tell if you're using it.<br />
+	The tool and viewer will both identify as Google Chrome (in <strong>0.7.1+</strong>), so all they have to go on is the location your IP originates from.
+</p>
+
+<h2>Q: The game isn't in English!</h2>
+<p>
+	You're most likely using an outdated version of the tool.
+</p>
+<p>
+	<strong>0.6.0</strong> or later is required for the English translation to work.<br />
+	<strong>0.6.1</strong> or later will notify you of updates, so I recommend you to use this.
+</p>
+
+<h2>Q: Why would I want to update?</h2>
+<p>
+	Aside from the normal reasons (new features and bug fixes), new updates are sometimes <strong>necessary</strong> to stay under DMM's radar.
+</p>
+<p>
+	<big><strong>tl;dr: Always update. It could be important!</strong></big>
+</p>
+
+<h2>Q: How does the English patch work?</h2>
+<p>
+	The patch works by laying a filter between the game and the server.<br />
+	When the game requests some data from the server, this little filter (a protocol handler on OSX, a proxy on Windows and Linux),<br />
+	catches the response and looks up translations in a database, swaps the Japanese text out for English, and hands it back.
+</p>
+<p>
+	The beauty of this is that the game can't tell any of this is taking place.<br />
+	It just displays whatever it thinks it got from the server.
+</p>
+<p>
+	Translation data is provided by Commie (though it does NOT use their proxy-based traslator), via <a href="http://api.comeonandsl.am/" target="_blank">api.comeonandsl.am</a>.<br />
+	Translation is done by <a href="http://twitter.com/RHExcelion" target="_blank">RHExcelion</a>, API by <a href="http://twitter.com/sikarra" target="_blank">sikarra</a>.
+</p>
+
+<h2>Q: Do you have any documentation I could use?</h2>
+<p>
+	Sure, just head over to the <a href="/docs/">Documentation</a> page. That has everything I know about how the game works.
+</p>
