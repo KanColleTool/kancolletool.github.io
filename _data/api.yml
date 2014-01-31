@@ -970,7 +970,7 @@
           name: api_created_ship_id
           type: int
         -
-          desc: "??? (definitely not a timestamp...)"
+          desc: "When it'll be complete, msecs since epoch"
           name: api_complete_time
           type: int
         -
