@@ -909,7 +909,7 @@
           name: api_name_id
           type: string
         -
-          desc: "???"
+          desc: "The expedition the fleet is currently on (page, number, completion timestamp, ???)"
           name: api_mission
           type: int[4]
         -
