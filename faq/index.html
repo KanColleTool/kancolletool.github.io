@@ -28,13 +28,24 @@ title: FAQ
 	The tool and viewer will both identify as Google Chrome (in <strong>0.7.1+</strong>), so all they have to go on is the location your IP originates from.
 </p>
 
-<h2>Q: The game isn't in English!</h2>
+<h2>Q: Why is the game not loading?</h2>
 <p>
-	You're most likely using an outdated version of the tool.
+	You most likely do not have Flash Player installed.
 </p>
 <p>
-	<strong>0.6.0</strong> or later is required for the English translation to work.<br />
-	<strong>0.6.1</strong> or later will notify you of updates, so I recommend you to use this.
+	This is especially common if you use Google Chrome as your main browser, as that uses its own, embedded version of it. It's not possible to load their embedded version into another program, so you have to <a href="http://get.adobe.com/flashplayer/" target="_blank">download and install Flash Player</a> yourself before KCT will work.
+</p>
+<p>
+	As an extra bonus, this will fix videos in Steam not loading.
+</p>
+
+<h2>Q: I started the game, why isn't it in English?</h2>
+<p>
+	You're most likely using an outdated version of the viewer (you need at least <strong>0.6.0</strong>), or not using it at all.
+</p>
+<p>
+	The Viewer is called "<strong>KCT Viewer</strong>" and should be in the same place as the Tool.<br />
+	KCT can't translate the game if you're playing in a browser or Flash Player/Flash Projector.
 </p>
 
 <h2>Q: Why would I want to update?</h2>
@@ -48,12 +59,10 @@ title: FAQ
 <h2>Q: How does the English patch work?</h2>
 <p>
 	The patch works by laying a filter between the game and the server.<br />
-	When the game requests some data from the server, this little filter (a protocol handler on OSX, a proxy on Windows and Linux),<br />
-	catches the response and looks up translations in a database, swaps the Japanese text out for English, and hands it back.
+	When the game requests some data from the server, this little filter (a protocol handler on OSX, a proxy on Windows and Linux), catches the response and looks up translations in a database, swaps the Japanese text out for English, and hands it back.
 </p>
 <p>
-	The beauty of this is that the game can't tell any of this is taking place.<br />
-	It just displays whatever it thinks it got from the server.
+	The beauty of this is that the game can't tell any of this is taking place. It just displays whatever it thinks it got from the server.
 </p>
 <p>
 	Translation data is provided by Commie (though it does NOT use their proxy-based traslator), via <a href="http://api.comeonandsl.am/" target="_blank">api.comeonandsl.am</a>.<br />
