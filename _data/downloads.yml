@@ -1,15 +1,19 @@
 ---
 -
+  version: 0.8.0
+  date: 2014-02-06
+  commit: 73315117fdaadf45da0d19c455c2e12a01daaaa8
+-
   version: 0.7.1
-  data: 2014-01-30
+  date: 2014-01-30
   commit: 174d2ffd8be6f97fab42eff5fa4fb48345003f0b
 -
   version: 0.7.0
-  data: 2014-01-28
+  date: 2014-01-28
   commit: f2832699171cda52f9b2fb35d590b38ae56256f6
 -
   version: 0.6.1
-  data: 2014-01-26
+  date: 2014-01-26
   commit: e1c865d9bcaee1d12601f41c520cb9c65929228b
 -
   version: 0.6.0
