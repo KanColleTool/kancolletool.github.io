@@ -426,6 +426,11 @@
           name: api_type
           type: int
 
+    -
+      name: mapcell
+      desc: "???"
+      type: object
+
 -
   name: api_get_member
   endpoints:
@@ -1193,12 +1198,38 @@
           type: int
 
 -
+  name: api_req_map
+  endpoints:
+
+    -
+      name: start
+      desc: "Starts a sortie"
+      params:
+        -
+          desc: "???"
+          name: api_formation
+          type: int
+        -
+          desc: "Fleet ID?"
+          name: api_deck_id
+          type: int
+
+-
   name: api_req_sortie
   endpoints:
 
     -
       name: battle
       desc: "Tells the client what happened during a day battle"
+      response:
+        -
+          desc: "ID of the fleet"
+          name: api_dock_id
+          type: int
+        -
+          desc: "New hp of ships"
+          name: api_nowhps
+          type: array<int>
 
     -
       name: battleresult
@@ -1225,7 +1256,7 @@
           name: api_member_lv
           type: int
         -
-          desc: "Admiral experience to next level?"
+          desc: "Admiral experience to next level (total)?"
           name: api_member_exp
           type: int
         -
@@ -1238,7 +1269,7 @@
           type: array<int>
         -
           desc: |
-            Ship experience to next level/final level?
+            Ship experience to next level/final level (total)?
             looks like: [ [ x, x, ... ], [ x, x, ... ] ]
           name: api_get_ship_exp
           type: array<array<int>>
@@ -1250,6 +1281,10 @@
           desc: "???"
           name: api_destsf
           type: int
+        -
+          desc: "Whether ships were lost"
+          name: api_lost_flag
+          type: array<int>
         -
           desc: "The name for the sortie"
           name: api_quest_name
