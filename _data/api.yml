@@ -662,7 +662,7 @@
           type: int
 
     -
-      name: ship{,1,2}
+      name: ship
       desc: "Returns information about your ships"
       type: array
       response:
@@ -949,6 +949,16 @@
           type: int
 
     -
+      name: ship2
+      desc: "???"
+      type: object
+
+    -
+      name: ship3
+      desc: "???"
+      type: object
+
+    -
       name: ndock
       desc: "Returns information about your repair docks."
       type: array
@@ -1181,3 +1191,101 @@
           desc: "???"
           name: api_use_bou
           type: int
+
+-
+  name: api_req_sortie
+  endpoints:
+
+    -
+      name: battle
+      desc: "Tells the client what happened during a day battle"
+
+    -
+      name: battleresult
+      desc: "Final results of a battle"
+      response:
+        -
+          desc: "Enemy ships that participated"
+          name: api_ship_id
+          type: array
+        -
+          desc: "The rank achieved (S/A/B/C/D)"
+          name: api_win_rank
+          type: string
+        -
+          desc: "???"
+          name: api_get_exp
+          type: int
+        -
+          desc: "Index of the ship that got mvp (1 indexed)"
+          name: api_mvp
+          type: int
+        -
+          desc: "Admiral level"
+          name: api_member_lv
+          type: int
+        -
+          desc: "Admiral experience to next level?"
+          name: api_member_exp
+          type: int
+        -
+          desc: "Admiral experience obtained"
+          name: api_get_base_exp
+          type: int
+        -
+          desc: "Ship experience obtained"
+          name: api_get_ship_exp
+          type: array<int>
+        -
+          desc: |
+            Ship experience to next level/final level?
+            looks like: [ [ x, x, ... ], [ x, x, ... ] ]
+          name: api_get_ship_exp
+          type: array<array<int>>
+        -
+          desc: "???"
+          name: api_dests
+          type: int
+        -
+          desc: "???"
+          name: api_destsf
+          type: int
+        -
+          desc: "The name for the sortie"
+          name: api_quest_name
+          type: string
+        -
+          desc: "The level of the sortie"
+          name: api_quest_level
+          type: int
+        -
+          desc: "???"
+          name: api_enemy_info
+          type: object
+        -
+          desc: "First time clearing this sortie?"
+          name: api_first_clear
+          type: int
+        -
+          desc: "??? (Flags for internal use?)"
+          name: api_get_flag
+          type: array<int>
+        -
+          desc: |
+            Information about the ship obtained
+            { api_ship_id: int, api_ship_type: string,
+            api_ship_name: string, api_ship_getmes: string }
+          name: api_get_ship
+          type: object
+        -
+          desc: "??? (Flags about ongoing event?)"
+          name: api_get_eventflag
+          type: int
+
+-
+  name: api_req_battle_midnight
+  endpoints:
+
+    -
+      name: battle
+      desc: "Tells the client what happened during a night battle"
