@@ -662,7 +662,7 @@
           type: int
 
     -
-      name: ship
+      name: ship{,1,2}
       desc: "Returns information about your ships"
       type: array
       response:
@@ -886,16 +886,6 @@
           desc: "Name, in Hiragana/Katakana"
           name: api_yomi
           type: string
-
-    -
-      name: ship2
-      desc: "??? (Seems to be some sort of pointer)"
-      type: string
-
-    -
-      name: ship3
-      desc: "??? (Seems to be some sort of pointer)"
-      type: string
 
     -
       name: deck
@@ -1166,4 +1156,28 @@
         -
           desc: "???"
           name: api_add_material_flag
+          type: int
+
+-
+  name: api_req_hokyu
+  endpoints:
+
+    -
+      name: charge
+      desc: "Called when you resupply your ships"
+      type: object
+      response:
+        -
+          desc: |
+            Ships resupplied
+            [ { api_id: int, api_fuel: int, api_bull: int, api_onslot: array<int> } ]
+          name: api_ship
+          type: array
+        -
+          desc: "Materials remaining"
+          name: api_material
+          type: array
+        -
+          desc: "???"
+          name: api_use_bou
           type: int
