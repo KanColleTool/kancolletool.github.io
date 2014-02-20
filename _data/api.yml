@@ -1,120 +1,120 @@
---- 
-- 
+---
+-
   name: api_get_master
-  endpoints: 
+  endpoints:
 
-    - 
+    -
       name: ship
       desc: |
-          Returns information about all shipgirls known to the game (including enemies).  
-          
+          Returns information about all shipgirls known to the game (including enemies).
+
           Warning: The response data is VERY BIG (>500kb).
-      response: 
-        - 
+      response:
+        -
           desc: "Bullet cost for remodelling"
           name: api_afterbull
           type: int
-        - 
+        -
           desc: "Fuel cost for remodelling"
           name: api_afterfuel
           type: int
-        - 
+        -
           desc: "Minimum level for remodelling"
           name: api_afterlv
           type: int
-        - 
+        -
           desc: "ID of the next form after remodelling"
           name: api_aftershipid
           type: int
-        - 
+        -
           desc: "Unused, always [ 0, 0 ]"
           name: api_atap
           type: int[2]
-        - 
+        -
           desc: Rarity
           name: api_backs
           type: int
-        - 
+        -
           desc: "Unused, always [ 0, 0 ]"
           name: api_bakk
           type: int[2]
-        - 
+        -
           desc: "Unused, always [ 0, 0 ]"
           name: api_baku
           type: int[2]
-        - 
+        -
           desc: "Deconstruction gain (Fuel, Ammo, Steel, Bauxite)"
           name: api_broken
           type: int[4]
-        - 
+        -
           desc: "The build time, in minutes"
           name: api_buildtime
           type: int
-        - 
+        -
           desc: "Max bullet capacity (cost to resupply)"
           name: api_bull_max
           type: int
-        - 
+        -
           desc: "Index within its category"
           name: api_cnum
           type: int
-        - 
+        -
           desc: Class
           name: api_ctype
           type: int
-        - 
+        -
           desc: "???"
           name: api_defeq
           type: int[4]
-        - 
+        -
           desc: "Has this ship been encountered?"
           name: api_enqflg
           type: int
-        - 
+        -
           desc: "Max fuel capacity (cost to resupply)"
           name: api_fuel_max
           type: int
-        - 
+        -
           desc: "Message upon getting her"
           name: api_getmes
           type: string
-        - 
+        -
           desc: "Unused, always [0,0,0,0,0,0,0,0]"
           name: api_grow
           type: int[8]
-        - 
+        -
           desc: "Unused, always [ 0, 0, 0, 0 ]"
           name: api_gumax
           type: int[4]
-        - 
+        -
           desc: "Firepower (base, max)"
           name: api_houg
           type: int[2]
-        - 
+        -
           desc: "Unknown (always [ 0, 0 ], but has equipment)"
           name: api_houk
           type: int[2]
-        - 
+        -
           desc: "Unknown (always [ 0, 0 ], but has equipment)"
           name: api_houm
           type: int[2]
-        - 
+        -
           desc: "Ship ID"
           name: api_id
           type: int
-        - 
+        -
           desc: "Evasion (base, max)"
           name: api_kaih
           type: int[2]
-        - 
+        -
           desc: Range
           name: api_leng
           type: int
-        - 
+        -
           desc: "Luck (base, ???; not max)"
           name: api_luck
           type: int[2]
-        - 
+        -
           desc: "Plane Capacity"
           name: api_maxeq
           type: int[4]
@@ -122,7 +122,7 @@
           desc: "Name"
           name: api_name
           type: string
-        - 
+        -
           desc: "??? (always null)"
           name: api_missions
           type: ???
@@ -130,75 +130,75 @@
           desc: "The ship's name, in Kanji"
           name: api_name
           type: string
-        - 
+        -
           desc: "Powerups granted when used for modernization"
           name: api_powup
           type: int[4]
-        - 
+        -
           desc: "Torpedo (base, max)"
           name: api_raig
           type: int[2]
-        - 
+        -
           desc: "Unused, always [ 0, 0 ]"
           name: api_raik
           type: int[2]
-        - 
+        -
           desc: "Unknown (always [ 0, 0 ], but has equipment)"
           name: api_raim
           type: int[2]
-        - 
+        -
           desc: "Unused, always [ 0, 0 ]"
           name: api_sakb
           type: int[2]
-        - 
+        -
           desc: "Line of Sight (base, max)"
           name: api_saku
           type: int[2]
-        - 
+        -
           desc: "Description for the Shipdex"
           name: api_sinfo
           type: string
-        - 
+        -
           desc: "Number of equipment slots"
           name: api_slot_num
           type: int
-        - 
+        -
           desc: "Card Number"
           name: api_sortno
           type: int
-        - 
+        -
           desc: "Armor (base, max)"
           name: api_souk
           type: int[2]
-        - 
+        -
           desc: "Ship Class"
           name: api_stype
           type: int
-        - 
+        -
           desc: "??? (always null)"
           name: api_systems
           type: ???
-        - 
+        -
           desc: "Endurance/Max HP (base, max)"
           name: api_taik
           type: int[2]
-        - 
+        -
           desc: "Anti-Sub Warfare (base, max)"
           name: api_tais
           type: int[2]
-        - 
+        -
           desc: "Unused, always [ null, null, null ]"
           name: api_touchs
           type: ???[3]
-        - 
+        -
           desc: "???"
           name: api_tous
           type: int[2]
-        - 
+        -
           desc: Anti-Air
           name: api_tyku
           type: int[2]
-        - 
+        -
           desc: "1 or 3 if the ship has extra voice clips, normally 0"
           name: api_voicef
           type: int
@@ -208,202 +208,202 @@
           type: string
       type: array
 
-    - 
+    -
       name: stype
       desc: "Returns meta-info about ship types"
-      response: 
-        - 
+      response:
+        -
           desc: "Ship type ID"
           name: api_id
           type: int
-        - 
+        -
           desc: "Index in menus"
           name: api_sortno
           type: int
-        - 
+        -
           desc: "Name of the class"
           name: api_name
           type: string
-        - 
+        -
           desc: "???"
           name: api_scnt
           type: int
-        - 
+        -
           desc: "???"
           name: api_kcnt
           type: int
       type: array
 
-    - 
+    -
       name: furniture
       desc: "Returns information about all available furniture in the game"
-      response: 
-        - 
+      response:
+        -
           desc: Description
           name: api_description
           type: string
-        - 
+        -
           desc: "ID of the item"
           name: api_id
           type: int
-        - 
+        -
           desc: "Sort number within its category"
           name: api_no
           type: int
-        - 
+        -
           desc: "Price, in furniture coins"
           name: api_price
           type: int
-        - 
+        -
           desc: Rarity
           name: api_rarity
           type: int
-        - 
+        -
           desc: "Is this item sold without a furniture fairy?"
           name: api_saleflg
           type: int
-        - 
+        -
           desc: "Item Name"
           name: api_title
           type: int
-        - 
+        -
           desc: Type/Category
           name: api_type
           type: int
       type: array
 
-    - 
+    -
       name: slotitem
       desc: "Returns information about all equippable items in the game"
-      response: 
-        - 
+      response:
+        -
           desc: "Unused value (Nothing boosts this)"
           name: api_atap
           type: int
-        - 
+        -
           desc: "Unused value (Nothing boosts this)"
           name: api_bakk
           type: int
-        - 
+        -
           desc: "Unused value"
           name: api_baku
           type: int
-        - 
+        -
           desc: "???"
           name: api_broken
           type: int[4]
-        - 
+        -
           desc: Firepower
           name: api_houg
           type: int
-        - 
+        -
           desc: Unknown
           name: api_houk
           type: int
-        - 
+        -
           desc: Unknown
           name: api_houm
           type: int
-        - 
+        -
           desc: "ID of the item"
           name: api_id
           type: int
-        - 
+        -
           desc: "Description of the item"
           name: api_info
           type: string
-        - 
+        -
           desc: Range
           name: api_leng
           type: int
-        - 
+        -
           desc: "Luck Boost (nothing boosts this)"
           name: api_luck
           type: int
-        - 
+        -
           desc: "Name of the item"
           name: api_name
           type: string
-        - 
+        -
           desc: Torpedo
           name: api_raig
           type: int
-        - 
+        -
           desc: "Unused value (Nothing boosts this)"
           name: api_raik
           type: int
-        - 
+        -
           desc: Unknown
           name: api_raim
           type: int
-        - 
+        -
           desc: "Rarity on a scale of 1-5"
           name: api_rare
           type: int
-        - 
+        -
           desc: "Unused (Nothing boosts this)"
           name: api_sakb
           type: int
-        - 
+        -
           desc: "Line of Sight"
           name: api_saku
           type: int
-        - 
+        -
           desc: Speed
           name: api_soku
           type: int
-        - 
+        -
           desc: "Index within its category"
           name: api_sortno
           type: int
-        - 
+        -
           desc: "Armor (Nothing boosts this)"
           name: api_souk
           type: int
-        - 
+        -
           desc: "Endurance/Max HP (Nothing boosts this)"
           name: api_taik
           type: int
-        - 
+        -
           desc: Anti-Sub
           name: api_tais
           type: int
-        - 
+        -
           desc: Anti-Air
           name: api_tyku
           type: int
-        - 
+        -
           desc: "Type of the item?"
           name: api_type
           type: int[4]
-        - 
+        -
           desc: "Unused; always 0"
           name: api_usebull
           type: string
       type: array
 
-    - 
+    -
       name: useitem
       desc: "Returns information about all consumable items in the game"
       type: array
       response:
-        - 
+        -
           desc: "The ID of the item"
           name: api_id
           type: int
-        - 
+        -
           desc: "The type of the item"
           name: api_usetype
           type: int
-        - 
+        -
           desc: "The category of the item"
           name: api_category
           type: int
-        - 
+        -
           desc: "The name of the item"
           name: api_name
           type: int
-        - 
+        -
           desc: "Contains (Description, empty string)"
           name: api_description
           type: string[2]
@@ -426,139 +426,139 @@
           name: api_type
           type: int
 
-- 
+-
   name: api_get_member
-  endpoints: 
-    - 
+  endpoints:
+    -
       desc: "Returns information on the current admiral"
       name: basic
       type: object
-      response: 
-        - 
+      response:
+        -
           desc: "The admiral's numeric ID"
           name: api_member_id
           type: string
-        - 
+        -
           desc: "The admiral's nickname (DMM.com username)"
           name: api_member_nickname
           type: string
-        - 
+        -
           desc: "Unknown and unused, possibly the admirals DMM.com UID?"
           name: api_nickname_id
           type: string
-        - 
+        -
           desc: "Unknown, if they’ve gotten into the game, maybe? (1 for me)"
           name: api_active_flag
           type: int
-        - 
+        -
           desc: "Unix Timestamp for when the user’s current session started"
           name: api_starttime
           type: int
-        - 
+        -
           desc: "The current user’s Admiral Level"
           name: api_level
           type: int
-        - 
+        -
           desc: "PvP Rank, not sure how this works… (8 for me)"
           name: api_rank
           type: int
-        - 
+        -
           desc: "Probably the amount of Admiral Level EXP"
           name: api_experience
           type: int
-        - 
+        -
           desc: "Not sure, the primary fleet’s name, maybe?"
           name: api_fleetname
           type: string
-        - 
+        -
           desc: "???"
           name: api_comment
           type: ???
-        - 
+        -
           desc: "???"
           name: api_comment_id
           type: string
-        - 
+        -
           desc: "Max number of shipgirls (100 for me)"
           name: api_max_chara
           type: int
-        - 
+        -
           desc: "Max number of items held (497 for me)"
           name: api_max_slotitem
           type: int
-        - 
+        -
           desc: "Max number of furniture items held (0 for me, so… no limit?)"
           name: api_max_kagu
           type: int
-        - 
+        -
           desc: "??? (0 for me)"
           name: api_playtime
           type: int
-        - 
+        -
           desc: "Whether to play the tutorial on login? (0 for me)"
           name: api_tutorial
           type: int
-        - 
+        -
           desc: "The currently active furniture items"
           name: api_furniture
           type: int[6]
-        - 
+        -
           desc: "The player’s max number of fleets"
           name: api_count_deck
           type: int
-        - 
+        -
           desc: "Number of available crafting docks"
           name: api_count_kdock
           type: int
-        - 
+        -
           desc: "Number of available repair docks"
           name: api_count_ndock
           type: int
-        - 
+        -
           desc: "Current number of Furniture Coins possessed"
           name: api_fcoin
           type: int
-        - 
+        -
           desc: "Number of sorties won?"
           name: api_st_win
           type: int
-        - 
+        -
           desc: "Number of sorties lost?"
           name: api_st_lose
           type: int
-        - 
+        -
           desc: "Total number of missions embarked on?"
           name: api_ms_count
           type: int
-        - 
+        -
           desc: "Number of missions that were successful?"
           name: api_ms_success
           type: int
-        - 
+        -
           desc: "Number of PvP battles won?"
           name: api_pt_win
           type: int
-        - 
+        -
           desc: "Number of PvP battles lost?"
           name: api_pt_lose
           type: int
-        - 
+        -
           desc: "Seems to be unused"
           name: api_pt_challenged
           type: int
-        - 
+        -
           desc: "Seems to be unused"
           name: api_pt_challenged_win
           type: int
-        - 
+        -
           desc: "Unknown (1 for me)"
           name: api_firstflag
           type: int
-        - 
+        -
           desc: "Percent progress through the tutorial (100 for me)"
           name: api_tutorial_progress
           type: int
-        - 
+        -
           desc: "Unknown, seems to be unused ([0, 0] for me)"
           name: api_pvp
           type: int[2]
@@ -568,95 +568,95 @@
       desc: "Returns more information about you"
       type: array
       response:
-        - 
+        -
           desc: "The admiral's numeric ID"
           name: api_member_id
           type: string
-        - 
+        -
           desc: "The admiral's nickname (DMM.com username)"
           name: api_member_nickname
           type: string
-        - 
+        -
           desc: "Unknown and unused, possibly the admirals DMM.com UID?"
           name: api_nickname_id
           type: string
-        - 
+        -
           desc: "Unknown, blank for me"
           name: api_cmt
           type: string
-        - 
+        -
           desc: "Unknown, blank for me"
           name: api_cmt_id
           type: string
-        - 
+        -
           desc: "Unknown, blank for me"
           name: api_photo_url
           type: string
-        - 
+        -
           desc: "The current user’s Admiral Level"
           name: api_level
           type: int
-        - 
+        -
           desc: "PvP Rank, not sure how this works… (8 for me)"
           name: api_rank
           type: int
-        - 
+        -
           desc: "Admiral Level EXP and needed EXP"
           name: api_experience
           type: int[2]
-        - 
+        -
           desc: |
               Sortie Stats
               { api_win: string<int>, api_lose: string<int>, api_rate: string<float> }
           name: api_war
           type: object
-        - 
+        -
           desc: |
               Expedition Stats
               { api_win: string<int>, api_lose: string<int>, api_rate: string<float> }
           name: api_mission
           type: object
-        - 
+        -
           desc: "PvP Stats { api_win: string<int>, api_lose: string<int>, api_rate: string<float> }"
           name: api_practice
           type: object
-        - 
+        -
           desc: "Number of Friends? (there's no such thing)"
           name: api_friend
           type: int
-        - 
+        -
           desc: "Number of Fleets"
           name: api_deck
           type: int
-        - 
+        -
           desc: "Number of Construction Docks"
           name: api_kdoc
           type: int
-        - 
+        -
           desc: "Number of Repair Docks"
           name: api_ndoc
           type: int
-        - 
+        -
           desc: "Number of Ships (current, max)"
           name: api_ship
           type: int[2]
-        - 
+        -
           desc: "Number of Equippable Items (current, max)"
           name: api_slotitem
           type: int[2]
-        - 
+        -
           desc: "Number of Furniture Items"
           name: api_furniture
           type: int
-        - 
+        -
           desc: "???"
           name: api_complate
           type: int[2]
-        - 
+        -
           desc: "??? (['0.0', '0.0'] for me)"
           name: api_complate
           type: string<float>[2]
-        - 
+        -
           desc: "Resource Cap"
           name: api_material_max
           type: int
@@ -888,6 +888,16 @@
           type: string
 
     -
+      name: ship2
+      desc: "??? (Seems to be some sort of pointer)"
+      type: string
+
+    -
+      name: ship3
+      desc: "??? (Seems to be some sort of pointer)"
+      type: string
+
+    -
       name: deck
       desc: "Returns information about your fleets"
       type: array
@@ -925,7 +935,7 @@
       name: material
       desc: |
         Returns information about your resources.
-        
+
         1. Fuel
         1. Ammo
         1. Steel
@@ -1070,8 +1080,8 @@
       name: slotitem
       desc: |
         Returns information about your equippable items.
-        
-        Response is a subset of /api_get_master/slotitem, with blank (but still present) api_info field, no api_sortno and the extra response data listed below.  
+
+        Response is a subset of /api_get_master/slotitem, with blank (but still present) api_info field, no api_sortno and the extra response data listed below.
         Yes, I was too lazy to write it all over again, you caught me.
       type: array
       response:
@@ -1157,4 +1167,3 @@
           desc: "???"
           name: api_add_material_flag
           type: int
-
