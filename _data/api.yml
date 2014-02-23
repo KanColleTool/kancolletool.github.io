@@ -1193,7 +1193,7 @@
           name: api_material
           type: array
         -
-          desc: "???"
+          desc: "Bauxite used"
           name: api_use_bou
           type: int
 
