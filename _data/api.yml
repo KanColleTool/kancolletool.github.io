@@ -852,7 +852,7 @@
           name: api_srate
           type: int
         -
-          desc: "\"Heart Lock\"?"
+          desc: "Number of stars the ship has minus 1 (0-4)"
           name: api_star
           type: int
         -
