@@ -10,13 +10,13 @@ title: FAQ
 	KanColleTool is two things.
 </p>
 <p>
-	<strong>A viewer</strong> for the game, a convenient launcher optimized specifically for KanColle.<br />
-	If you're using Flash Player Standalone for the game, think that, but better.<br />
-	As an extra bonus, it'll translate the game into English for you (using Commie's translation data, provided by Sikarra).
-</p>
-<p>
 	<strong>A tool</strong> to view information the game doesn't show you, and information it does show you in a more convenient way.<br />
 	It's a small window that stays quietly in the tray when not in use, that will also notify you of completed constructions and repairs.
+</p>
+<p>
+	<strong>A viewer</strong> for the game, a convenient launcher optimized specifically for KanColle.<br />
+	If you're using Flash Player Standalone/Flash Projector for the game, think that, but better.<br />
+	As an extra bonus, it'll translate the game into English for you, and let the Tool livestream data.
 </p>
 
 <h2>Q: Is this safe? Will I get banned?</h2>
@@ -26,6 +26,14 @@ title: FAQ
 <p>
 	Using KCT will not increase your chances of getting banned, and starting with <strong>0.7.1</strong>, not even I could tell if you're using it.<br />
 	The tool and viewer will both identify as Google Chrome (in <strong>0.7.1+</strong>), so all they have to go on is the location your IP originates from.
+</p>
+
+<h2>Q: Why would I want to update?</h2>
+<p>
+	Aside from the normal reasons (new features and bug fixes), new updates are sometimes <strong>necessary</strong> to stay under DMM's radar.
+</p>
+<p>
+	<big><strong>TL;DR: Always update. It could be important!</strong></big>
 </p>
 
 <h2>Q: Why is the game not loading?</h2>
@@ -39,27 +47,34 @@ title: FAQ
 	As an extra bonus, this will fix videos in Steam not loading.
 </p>
 
-<h2>Q: I started the game, why isn't it in English?</h2>
+<h2>Q: Why is the Windows version so big!?</h2>
 <p>
-	You're most likely using an outdated version of the viewer (you need at least <strong>0.6.0</strong>), or not using it at all.
+	On Windows, we have to bundle our own WebKit with the application. This is the web rendering engine used by Google Chrome among others, and a really good one at that, but with the drawback that it's pretty freaking big.
 </p>
 <p>
-	The Viewer is called "<strong>KCT Viewer</strong>" and should be in the same place as the Tool.<br />
-	KCT can't translate the game if you're playing in a browser or Flash Player/Flash Projector.
+	On a Mac, we can use the system-provided WebKit version, and on Linux we simply depend on it and have the package manager provide us with one, but on Windows, neither of those exist, and thus we have to bundle it with the program.
 </p>
 
-<h2>Q: Why would I want to update?</h2>
+<h2>Q: I started the game, why isn't it in English?</h2>
 <p>
-	Aside from the normal reasons (new features and bug fixes), new updates are sometimes <strong>necessary</strong> to stay under DMM's radar.
+	There are two main things that could be causing this:
 </p>
-<p>
-	<big><strong>tl;dr: Always update. It could be important!</strong></big>
-</p>
+<ol>
+	<li>
+		<h5>You aren't using the accompanying Viewer.</h5>
+		You should be using the program called <strong>KCTViewer</strong> that comes with the Tool.<br />
+		This does most of the heavy lifting that makes the translation work (and livestreaming to the tool and quite a few optimizations for the game, at that), so it's not possible to easily provide translation if you're not using it.
+	</li>
+	<li>
+		<h5>You never enabled it.</h5>
+		In recent Viewer versions, the translation is disabled by default, and must be manually enabled in the settings.
+	</li>
+</ol>
 
 <h2>Q: How does the English patch work?</h2>
 <p>
 	The patch works by laying a filter between the game and the server.<br />
-	When the game requests some data from the server, this little filter (a protocol handler on OSX, a proxy on Windows and Linux), catches the response and looks up translations in a database, swaps the Japanese text out for English, and hands it back.
+	When the game requests some data from the server, this little filter (a protocol/reply handler, depending on the system), catches the response and looks up translations in a database, swaps the Japanese text out for English, and hands it back.
 </p>
 <p>
 	The beauty of this is that the game can't tell any of this is taking place. It just displays whatever it thinks it got from the server.
