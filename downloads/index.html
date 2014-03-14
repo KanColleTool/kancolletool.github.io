@@ -11,7 +11,7 @@ title: Downloads
 <h2>Windows</h2>
 <div class="dl-section">
 	<p>
-		Tested on Windows <strong>7</strong> and (briefly) Windows <strong>8.1</strong>, but should be compatible all the way back to Windows XP.
+		Official support for Windows <strong>7</strong> and <strong>8.1</strong>. Windows <strong>XP</strong> should work as well, but it's untested.
 	</p>
 	<p>
 		The <strong>Standalone</strong> version is a folder full of DLLs and two EXEs you can put anywhere.<br />
@@ -26,8 +26,7 @@ title: Downloads
 <h2>Mac</h2>
 <div class="dl-section">
 	<p>
-		Requires OSX <strong>10.9</strong> (Mavericks) or later.<br />
-		Support for <strong>10.7</strong> (Lion) and <strong>10.8</strong> (Mountain Lion) is planned, maybe <strong>10.6</strong> (Snow Leopard) too.
+		Requires OSX <strong>10.8</strong> (Mountain Lion) or later.
 	</p>
 	<div class="dl-links">
 		<a class="btn btn-primary" href="http://kancolletool.s3.amazonaws.com/downloads/{{ site.data.downloads[0].version }}/KanColleTool.dmg">Download</a>
@@ -37,15 +36,16 @@ title: Downloads
 <h2>Linux</h2>
 <div class="dl-section">
 	<p>
-		<strong>Ubuntu</strong> users can install KanColleTool by adding <a href="https://launchpad.net/~kancolletool/+archive/ppa">this PPA</a> to their system and installing the <code>kancolletool</code> and <code>kancolletool-viewer</code> packages.<br />
-		This will also automatically keep you up to date with updates through the system's normal update system.
+		<!--<strong>Ubuntu</strong> users can install KanColleTool by adding <a href="https://launchpad.net/~kancolletool/+archive/ppa">this PPA</a> to their system and installing the <code>kancolletool</code> and <code>kancolletool-viewer</code> packages.<br />
+		This will also automatically keep you up to date with updates through the system's normal update system.-->
+		Until we get the PPA back up and working again, you'll have to compile the sources manually. Sorry about that.
 	</p>
 </div>
 
 <h2>Source</h2>
 <div class="dl-section">
 	<p>
-		If you want to build the project yourself, you can either get the latest sources from the <a href="https://github.com/KanColleTool/KanColleTool/">GitHub Repository</a>, or download a snapshot of the source as of this release below.
+		If you want to build the project yourself, you can get the latest sources from the <a href="https://github.com/KanColleTool/KanColleTool/">GitHub Repository</a>.
 	</p>
 	<p>
 		<strong>Build Requirements:</strong>
@@ -55,13 +55,4 @@ title: Downloads
 		</ul>
 		To build the Windows installer, you'll also need <a href="http://www.jrsoftware.org/isinfo.php">InnoSetup 5</a> (with the plugin the installer asks you about) installed.
 	</p>
-	<div class="dl-links">
-		<a class="btn btn-primary" href="https://github.com/KanColleTool/KanColleTool/archive/{{ site.data.downloads[0].commit }}.zip">Snapshot (.zip)</a>
-		<a class="btn btn-primary" href="https://github.com/KanColleTool/KanColleTool/archive/{{ site.data.downloads[0].commit }}.tar.gz">Snapshot (.tar.gz)</a>
-	</div>
 </div>
-
-<hr />
-<p>
-	Older versions can be found <a href="https://github.com/KanColleTool/KanColleTool/releases">here</a>.
-</p>
