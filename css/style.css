@@ -8,7 +8,7 @@ body { padding-top: 70px; padding-bottom: 20px; }
  * Common
  */
 h4 { margin-bottom: 5px; }
-p { max-width: 800px; }
+p, pre { max-width: 800px; }
 li { max-width: 700px; }
 
 /*
