@@ -914,7 +914,7 @@
           name: api_name_id
           type: string
         -
-          desc: "The expedition the fleet is currently on (page, number, completion timestamp, ???)"
+          desc: "The expedition the fleet is currently on (status, number, completion timestamp in ms, ???)"
           name: api_mission
           type: int[4]
         -
