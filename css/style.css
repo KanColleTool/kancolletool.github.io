@@ -1,4 +1,4 @@
-body { padding-top: 70px; padding-bottom: 20px; font-size: 16px; line-height: 1.5em; }
+body { padding-top: 70px; padding-bottom: 20px; }
 
 .navbar-kct { background-color: rgba(75, 75, 75, 0.85); }
 .navbar-kct .navbar-brand, .navbar-kct .navbar-nav > li > a { color: #fff; }
@@ -8,7 +8,7 @@ body { padding-top: 70px; padding-bottom: 20px; font-size: 16px; line-height: 1.
  * Common
  */
 h4 { margin-bottom: 5px; }
-p, pre { max-width: 800px; }
+p, pre { max-width: 800px; font-size: 15px; line-height: 1.5em; }
 li { max-width: 700px; }
 
 /*
