@@ -1,4 +1,4 @@
-body { padding-top: 70px; padding-bottom: 20px; }
+body { padding-top: 70px; padding-bottom: 20px; font-size: 16px; line-height: 1.5em; }
 
 .navbar-kct { background-color: rgba(75, 75, 75, 0.85); }
 .navbar-kct .navbar-brand, .navbar-kct .navbar-nav > li > a { color: #fff; }
