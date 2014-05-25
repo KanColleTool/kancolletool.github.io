@@ -39,3 +39,5 @@ function cN() {
 
 As you can see, this isn't one number, but instead three parts of fixed lengths.  
 The server *will* verify that this signature is correct, and if you get it wrong, you get Error 100 back.
+
+**(Note: the keys mentioned above have since been revoked. Also loc[10] is always 1000. Good luck.)**
