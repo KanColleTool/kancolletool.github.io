@@ -3,7 +3,8 @@
 	[
 		{
 			"path": ".",
-			"folder_exclude_patterns": ["_site"]
+			"folder_exclude_patterns": ["_site"],
+			"file_exclude_patterns": ["*.sublime-workspace"]
 		}
 	]
 }
