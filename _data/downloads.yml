@@ -1,5 +1,9 @@
 ---
 -
+  version: 0.9.2
+  date: 2014-07-24
+  commit: 81c1188d900ee20f57595137a6c064d0e82c11f8
+-
   version: 0.9.1
   date: 2014-05-25
   commit: becd224ff6b0c390f468fde77fae5b8cb4d4ee03
