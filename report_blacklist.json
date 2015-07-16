@@ -7,5 +7,6 @@
 	"battleresult": ["api_deck_name"],
 	"battle_result": ["api_deck_name", "api_win_rank"],
 	"get_practice_enemyinfo": ["api_nickname", "api_cmt", "api_deckname"],
+	"getlist": ["api_nickname", "api_comment"],
 	"start": ["api_complatetime_str"]
 }
