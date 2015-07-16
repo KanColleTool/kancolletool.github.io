@@ -5,7 +5,7 @@
 	"practice": ["api_enemy_name", "api_enemy_comment"],
 	"record": ["api_nickname", "api_cmt"],
 	"battleresult": ["api_deck_name"],
-	"battle_result": ["api_deck_name"],
+	"battle_result": ["api_deck_name", "api_win_rank"],
 	"get_practice_enemyinfo": ["api_nickname", "api_cmt", "api_deckname"],
 	"start": ["api_complatetime_str"]
 }
