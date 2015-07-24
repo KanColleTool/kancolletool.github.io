@@ -285,7 +285,7 @@
           name: api_bakk
           type: int
         -
-          desc: "Unused value"
+          desc: "Dive Bomber"
           name: api_baku
           type: int
         -
