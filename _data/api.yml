@@ -289,7 +289,7 @@
           name: api_baku
           type: int
         -
-          desc: "???"
+          desc: "Resources gained for deconstructing this item (Fuel, Ammo, Steel, Bauxite)"
           name: api_broken
           type: int[4]
         -
@@ -297,11 +297,11 @@
           name: api_houg
           type: int
         -
-          desc: Unknown
+          desc: "Evasion"
           name: api_houk
           type: int
         -
-          desc: Unknown
+          desc: "Accuracy"
           name: api_houm
           type: int
         -
