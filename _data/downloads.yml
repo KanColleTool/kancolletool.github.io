@@ -1,5 +1,9 @@
 ---
 -
+  version: 0.9.6
+  date: 2015-12-24
+  commit: 6ede000aa511b8aff0bd40107db63ddeb5d3c78b
+-
   version: 0.9.5
   date: 2015-08-11
   commit: fb267c68bb80bcc7f85cf5871284320b7cebbd97
